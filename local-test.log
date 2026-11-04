@@ -1,0 +1,20 @@
+PASS  empty board has 9 empty cells
+PASS  row win detected
+PASS  column win detected
+PASS  main diagonal win detected
+PASS  anti-diagonal win detected
+PASS  no winner -> null
+PASS  winning line returned
+PASS  isFull true only when no empty cells
+PASS  availableMoves lists empties in order
+PASS  status reports playing + next mover
+PASS  status reports a draw on a full board with no winner
+PASS  hard AI blocks a human win  [O must take index 2 to stop XXX]
+PASS  hard AI takes its own win
+PASS  hard AI never loses (X cannot win)  [winner=O]
+PASS  seeded easy mode is deterministic  [move 5]
+PASS  easy move is an empty cell  [cell 5]
+PASS  aiMove returns -1 when no moves
+
+SUMMARY: 17 passed, 0 failed / 17
+PASS

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Tic Tac Toe</h1>
+
+    <div class="controls">
+      <div class="group" role="radiogroup" aria-label="Your mark">
+        <button id="x-btn" type="button" class="mark">Play as X</button>
+        <button id="o-btn" type="button" class="mark">Play as O</button>
+      </div>
+
+      <label class="group">
+        Difficulty
+        <select id="difficulty">
+          <option value="hard">Hard (unbeatable)</option>
+          <option value="easy">Easy (random)</option>
+        </select>
+      </label>
+
+      <button id="new-btn" type="button" class="new">New game</button>
+    </div>
+
+    <p class="you" id="you-label"></p>
+
+    <div class="board" id="cells" aria-label="Tic tac toe board"></div>
+
+    <p class="status" id="status" aria-live="polite"></p>
+
+    <p class="hint">The board resets automatically a moment after each game ends.</p>
+  </main>
+
+  <script src="logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

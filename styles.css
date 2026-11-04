@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: #10131a;
+  color: #e8e8f0;
+}
+
+.wrap {
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.group {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #1a1f2b;
+  padding: 0.35rem 0.5rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+button,
+select {
+  font: inherit;
+  cursor: pointer;
+}
+
+.mark {
+  border: 0;
+  background: #2a3140;
+  color: #e8e8f0;
+  padding: 0.35rem 0.7rem;
+  border-radius: 8px;
+}
+
+.mark:hover {
+  background: #37404f;
+}
+
+select {
+  background: #2a3140;
+  color: #e8e8f0;
+  border: 0;
+  padding: 0.3rem 0.5rem;
+  border-radius: 8px;
+}
+
+.new {
+  background: #3366cc;
+  color: #fff;
+  border: 0;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+}
+
+.you {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  max-width: 300px;
+  margin: 1rem auto;
+}
+
+.cell {
+  aspect-ratio: 1;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6ee7ff;
+  background: #1a1f2b;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+
+.cell.filled {
+  cursor: default;
+}
+
+.cell:hover:not(.filled):not(:disabled) {
+  background: #2a3140;
+}
+
+.cell:disabled {
+  cursor: default;
+}
+
+.status {
+  font-size: 1.15rem;
+  min-height: 1.5rem;
+}
+
+.hint {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
